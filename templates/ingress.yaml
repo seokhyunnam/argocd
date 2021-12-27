@@ -7,9 +7,9 @@ metadata:
 {{ toYaml .Values.ingress.labels | indent 4 }}
   name: {{ template "fullname" .}}-socks-ingress
 spec:
-  tls:
-  - hosts:
-    secretName: tls-secret
+#  tls:
+#  - hosts:
+#    secretName: tls-secret
   rules:
   - http:
       paths:
