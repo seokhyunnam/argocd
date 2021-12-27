@@ -59,7 +59,7 @@ catalogue:
     image:
         repo: gcr.io/studious-lyceum-335101/catalogue
         tag: latest
-    containerPort: 80
+    containerPort: 8080
     resources:
         limits:
             cpu: 100m
