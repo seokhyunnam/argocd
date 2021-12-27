@@ -29,4 +29,3 @@ spec:
     - {{ template "host" . }}
     {{- end }}
   {{- end }}
-#a
