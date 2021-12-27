@@ -16,6 +16,8 @@ ingress:
     tlsSecretName: ''
     annotations:
       kubernetes.io/ingress.global-static-ip-name: deploy-helm-chart-socks-ingress-ip
+    annotation:
+      networking.gke.io/managed-certificates: kkk
 
 cartsdb:
     image:

@@ -1,8 +1,6 @@
 apiVersion: networking.gke.io/v1
 kind: ManagedCertificate
 metadata:
-  name: certificate
+  name: kkk
 spec:
   domains:
-#    - domain-name1
-#    - domain-name2
