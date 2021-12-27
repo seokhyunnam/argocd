@@ -23,5 +23,9 @@ spec:
     {{- end }}
   {{- if .Values.ingress.tlsSecretName }}
   tls:
-  - hosts:
-    secretName: tls-secret
+  - secretName: {{ .Values.ingress.tlsSecretName }}
+    {{- if .Values.host }}
+    hosts:
+    - {{ template "host" . }}
+    {{- end }}
+  {{- end }}
