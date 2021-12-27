@@ -45,17 +45,6 @@ carts:
             cpu: 300m
             memory: 2000Mi
 
-#cataloguedb:
-#    image:
-#        repo: weaveworksdemos/catalogue-db
-#        tag: 0.3.0
-#    resources:
-#        limits:
-#            cpu: 300m
-#            memory: 1000Mi
-#        requests:
-#            cpu: 100m
-#            memory: 300Mi
 
 catalogue:
     image:
