@@ -14,7 +14,7 @@ ingress:
     labels: {}
     host: ''
     tlsSecretName: ''
-    annotations: kubernetes.io/ingress.global-static-ip-name:"deploy-helm-chart-socks-ingress-ip"
+#    annotations: kubernetes.io/ingress.global-static-ip-name:"deploy-helm-chart-socks-ingress-ip"
 
 cartsdb:
     image:
