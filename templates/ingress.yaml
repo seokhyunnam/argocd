@@ -24,8 +24,5 @@ spec:
   {{- if .Values.ingress.tlsSecretName }}
   tls:
   - secretName: tls-secret
-    {{- if .Values.host }}
-    hosts:
+  - hosts:
     - test.shnam.pw
-    {{- end }}
-  {{- end }}
