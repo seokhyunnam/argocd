@@ -3,7 +3,8 @@ kind: Ingress
 metadata:
   annotations:
 {{ toYaml .Values.ingress.annotations | indent 4 }}
-{{ toYaml .Values.ingress.annotation | indent 4 }}
+    networking.gke.io/managed-certificates: kkk  
+
   labels:
 {{ toYaml .Values.ingress.labels | indent 4 }}
   name: {{ template "fullname" .}}-socks-ingress
