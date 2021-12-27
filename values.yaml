@@ -12,8 +12,8 @@ istio:
 
 ingress:
     labels: {}
-    host: test.shnam.pw
-    tlsSecretName: tls-secret
+    host: ''
+    tlsSecretName: ''
     annotations:
       kubernetes.io/ingress.global-static-ip-name: deploy-helm-chart-socks-ingress-ip
 
