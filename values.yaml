@@ -12,7 +12,7 @@ istio:
 
 ingress:
     labels: {}
-    host: ''
+    host: '' 
     tlsSecretName: ''
     annotations:
       kubernetes.io/ingress.global-static-ip-name: deploy-helm-chart-socks-ingress-ip
