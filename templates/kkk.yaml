@@ -4,3 +4,4 @@ metadata:
   name: kkk
 spec:
   domains:
+    - test.shnam.pw
