@@ -3,7 +3,6 @@ kind: Ingress
 metadata:
   annotations:
 {{ toYaml .Values.ingress.annotations | indent 4 }}
-    networking.gke.io/managed-certificates: kkk  
 
   labels:
 {{ toYaml .Values.ingress.labels | indent 4 }}
@@ -24,9 +23,9 @@ spec:
     {{- end }}
   {{- if .Values.ingress.tlsSecretName }}
   tls:
-  - secretName: {{ .Values.ingress.tlsSecretName }}
+  - secretName: tls-secret
     {{- if .Values.host }}
     hosts:
-    - {{ template "host" . }}
+    - test.shnam.pw
     {{- end }}
   {{- end }}
