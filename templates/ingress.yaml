@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   annotations:
-{{ toYaml .Values.ingress.annotations | indent 4 }}
+{{ toYaml .Values.ingress.annotations }}
   labels:
 {{ toYaml .Values.ingress.labels | indent 4 }}
   name: {{ template "fullname" .}}-socks-ingress
