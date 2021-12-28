@@ -15,6 +15,8 @@ spec:
       labels:
         name: zipkin
     spec:
+      nodeSelector:
+        cloud.google.com/gke-nodepool: sock-shop-pool
       containers:
       - name: zipkin
         image: {{if .Values.global.registry}}{{ .Values.global.registry }}/{{end}}{{ .Values.zipkin.image.repo }}:{{ .Values.zipkin.image.tag }}

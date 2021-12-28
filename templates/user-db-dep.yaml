@@ -15,6 +15,8 @@ spec:
       labels:
         name: user-db
     spec:
+      nodeSelector:
+        cloud.google.com/gke-nodepool: sock-shop-pool
       containers:
       - name: user-db
         image: {{if .Values.global.registry}}{{ .Values.global.registry }}/{{end}}{{ .Values.userdb.image.repo }}:{{ .Values.userdb.image.tag }}
